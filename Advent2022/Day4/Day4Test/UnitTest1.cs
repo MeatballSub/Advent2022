@@ -31,12 +31,12 @@ namespace Day4Test
             };
         }
 
-        public static IEnumerable<object[]> Part1sample => TestSetup("sample_input.txt", -1);
+        public static IEnumerable<object[]> Part1sample => TestSetup("sample_input.txt", 2);
 
-        public static IEnumerable<object[]> Part1 => TestSetup("input.txt", -1);
+        public static IEnumerable<object[]> Part1 => TestSetup("input.txt", 466);
 
-        public static IEnumerable<object[]> Part2sample => TestSetup("sample_input.txt", -1);
+        public static IEnumerable<object[]> Part2sample => TestSetup("sample_input.txt", 4);
 
-        public static IEnumerable<object[]> Part2 => TestSetup("input.txt", -1);
+        public static IEnumerable<object[]> Part2 => TestSetup("input.txt", 865);
     }
 }
