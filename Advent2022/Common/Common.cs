@@ -16,4 +16,18 @@
             return input;
         }
     }
+
+    public static class ExtensionHelper
+    {
+        public static long Product(this IEnumerable<long> source)
+        {
+            return source.Aggregate((long)1, (a, b) => a * b);
+        }
+
+        public static long Product(this IEnumerable<int> source)
+        {
+            return source.Aggregate((long)1, (a, b) => a * b);
+        }
+
+    }
 }

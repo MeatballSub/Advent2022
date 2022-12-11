@@ -1,4 +1,5 @@
-﻿using static Common.Common;
+﻿using Common;
+using static Common.Common;
 
 bool isVisible(List<string> forest, int x, int y)
 {
@@ -28,7 +29,7 @@ long scenicScore(List<string> forest, int x, int y)
         Enumerable.Range(x + 1, forest[y].Length - x - 1).FirstOrDefault(rowCheck, forest[y].Length - 1) - x, // right
     };
 
-    return view_distances.Aggregate((long)1, (a, b) => a * b);
+    return view_distances.Product();
 }
 
 long execute(string file_name, Calculation calc)
